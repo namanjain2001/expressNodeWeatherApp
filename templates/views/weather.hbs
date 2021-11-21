@@ -1,0 +1,41 @@
+{{> header_links}}
+<!-- header -->
+
+<!-- header Ends -->
+
+{{> header}}
+
+<!-- Banner -->
+
+<main>
+    <section class="weather-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form>
+                        <div class="form-group position-relative">
+                            <input type="text" id="cityNameFeild" class="w-100" placeholder="Enter city name"
+                                autocomplete="off" />
+                            <button type="submit" id="submit" class="btn btn-warning">Search</button>
+                        </div>
+                    </form>
+                    <div class="result-block mt-5 p-4 rounded-3">
+                        <div class="day-n-date d-flex flex-wrap justify-content-between">
+                            <div id="day"></div>
+                            <div id="date"></div>
+                        </div>
+                        <div class="display-result-block text-center mt-3 invisible" id="resultBlock">
+                            <div id="location" class="my-3 fw-bold"></div>
+                            <div class="show-temp"><span id="temp">22.27</span>&deg;C <span class="temp_mood ms-2"><i
+                                        class="fas fa-cloud"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Banner Ends -->
+
+{{> footer}}
