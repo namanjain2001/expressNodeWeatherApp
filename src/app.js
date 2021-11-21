@@ -2,11 +2,10 @@ const path = require("path");
 const express = require("express");
 const app = express();
 const hbs = require('hbs');
-const port = process.env.PROD || 8000;
 const publicPath = path.join(__dirname, "../public/");
 const viewPath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
-
+const port = process.env.PORT || 8000;
 
 // view engine
 app.set("view engine", "hbs");
